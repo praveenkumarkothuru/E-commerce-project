@@ -12,7 +12,7 @@ import About from "./About";
 import Timer from "./Timer";
 import Location from "./Location";
 import PaymentPage from "./components/PaymentPage";
-import OrdersList from "./OrderList";
+import OrdersList from "./OrderLIst";
 import OrderSuccess from "./OrderSuccess";
 import Login from "./Login";
 import Register from "./Register";
