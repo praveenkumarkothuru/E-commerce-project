@@ -1,0 +1,88 @@
+/* MAIN FOOTER AREA */
+.footer {
+  width: 100%;
+  background: #1C1C1C;  /* Dark premium color */
+  color: white;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;   /* Keeps columns in one line */
+  gap: 40px;
+}
+
+/* LEFT LOGO SECTION */
+.footer-left {
+  width: 28%;
+}
+
+.footer-left .footer-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FF8C00; /* Orange like Swiggy */
+}
+
+.footer-left p {
+  margin-top: 8px;
+  color: #ccc;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover colors */
+.instagram:hover { color: #E1306C; }
+.linkedin:hover { color: #0A66C2; }
+.facebook:hover { color: #1877F2; }
+.whatsapp:hover { color: #25D366; }
+
+/* FOUR COLUMNS SECTION */
+.footer-columns {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;   /* All columns side-by-side */
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  color: #bbbbbb;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-col p:hover {
+  color: #ffffff;
+}
+
+/* DROPDOWN */
+.cities-dropdown {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  color: #000;
+  font-size: 14px;
+}

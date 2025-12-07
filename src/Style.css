@@ -1,0 +1,637 @@
+/* ---------------- VEG ITEMS ---------------- */
+.veg-container {
+  padding: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.veg-card {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.veg-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.veg-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+.veg-card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+/* ---------------- END VEG ITEMS ---------------- */
+
+/* ---------------- GLOBAL CARD BACKGROUND COLOR ---------------- */
+:root {
+  --card-bg: #dddbdd;   /* 🔥 Change this to any color */
+  --card-shadow: rgba(93, 87, 110, 0.1);
+  --card-shadow-hover: rgba(85, 60, 81, 0.2);
+}
+
+/* ---------------- FOOD CARD ---------------- */
+.food-card {
+  width: 220px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #277a9b;
+  text-align: center;
+  background: var(--card-bg);
+  box-shadow: 0 8px 12px var(--card-shadow);
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 14px var(--card-shadow-hover);
+}
+
+.food-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.food-card h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.food-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.btn-cart {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: green;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cart:hover {
+  background: darkgreen;
+}
+
+/* ---------------- PRODUCT CARD ---------------- */
+.product-card {
+  width: 160px;
+  padding: 10px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px var(--card-shadow);
+  position: relative;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px var(--card-shadow-hover);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.add-btn {
+  position: absolute;
+  top: 125px;
+  left: 35px;
+  background: white;
+  border: 2px solid #ff2e63;
+  color: #ff2e63;
+  padding: 5px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.offer {
+  color: green;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.product-name {
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.pack {
+  color: #888;
+  font-size: 13px;
+}
+
+.rating {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #444;
+}
+
+/* ---------------- END OF STYLE.CSS ---------------- */
+
+/* ---------------- PAGINATION ---------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.page-btn {
+  padding: 8px 14px;
+  font-size: 15px;
+  border: 1px solid #888;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.page-btn.active {
+  background: #008CFF;
+  color: white;
+  font-weight: bold;
+}
+.page-btn:hover {
+  background: #005fbb;
+  color: white;
+  transition: 0.3s;
+}
+/* ---------------- END PAGINATION ---------------- */
+
+/* ---------------- CART PAGE ---------------- */
+.cart-page {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 22px;
+  color: #777;
+}
+
+/* Cart Container */
+.cart-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Cart Items */
+.cart-items {
+  flex: 2;
+}
+
+.cart-card {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Quantity Box */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.qty-box button {
+  background: #f04a23;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-box span {
+  font-size: 18px;
+  font-weight: bold;
+  width: 28px;
+  text-align: center;
+}
+
+/* Remove & Clear Buttons */
+.remove-btn {
+  margin-top: 10px;
+  background: rgb(27, 216, 42);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+.clear-btn:hover {
+  background: darkred;
+}
+
+/* Billing Summary */
+.billing-summary {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.billing-summary h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Discount Buttons */
+.discount-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.green-btn {
+  background: green;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.green-btn:hover {
+  background: darkgreen;
+}
+
+/* Coupon Input and Apply Button */
+.coupon-input {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-right: 8px;
+}
+
+.apply-btn {
+  padding: 5px 8px;
+  background: blue;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Billing Details */
+.billing-details p,
+.billing-details h3 {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.billing-details h3 {
+  font-weight: bold;
+}
+
+/* Email Input */
+.email-section input {
+  padding: 8px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Send Order Email Button */
+.send-btn {
+  padding: 10px 20px;
+  background-color: #115f14;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.send-btn:hover {
+  background-color: #45a049;
+}
+
+/* Button Group for proper spacing */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ---------------- CONTACT PAGE ---------------- */
+/* MAIN WRAPPER */
+.z-contact-wrapper {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 70px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.z-contact-hero {
+  background: linear-gradient(to right, #ff4d4d, #ff1a1a);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 25px 25px;
+}
+
+.z-contact-hero h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.z-contact-hero p {
+  margin-top: 10px;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* INFO GRID */
+.z-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.z-info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.z-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.z-icon {
+  font-size: 40px;
+  color: #ff2b2b;
+  margin-bottom: 10px;
+}
+
+.z-info-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* FORM SECTION */
+.z-contact-form-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.z-contact-form-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.z-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.z-form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.z-form-row input {
+  flex: 1;
+}
+
+/* INPUTS */
+.z-form input,
+.z-form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.z-form input:focus,
+.z-form textarea:focus {
+  border-color: #ff2b2b;
+  box-shadow: 0 0 6px rgba(255, 50, 50, 0.3);
+}
+
+/* BUTTON */
+.z-send-btn {
+  background: #ff2b2b;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 200px;
+  margin: auto;
+}
+
+.z-send-btn:hover {
+  background: #e60000;
+}
+
+/* ---------------- END CONTACT PAGE ---------------- */
+
+/* ---------------- ABOUT US PAGE ---------------- */
+/* About Page Styles */
+/* Container */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.about-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Intro Text */
+.about-description {
+  font-size: 17px;
+  color: #444;
+  text-align: center;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* Section */
+.about-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Area */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.team-card {
+  flex: 1 1 250px;
+  max-width: 260px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.team-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}

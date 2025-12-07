@@ -1,0 +1,160 @@
+/* MAIN CARD */
+.bb-card {
+  width: 200px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 15px;
+  position: relative;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.bb-card:hover {
+  transform: scale(1.02);
+}
+
+/* HEART LIKE BUTTON */
+.bb-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.bb-heart {
+  font-size: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* PRODUCT IMAGE */
+.bb-img {
+  width: 110%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* SMALL ADD BOX ON IMAGE */
+.bb-add-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 3px 7px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.bb-add-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bb-options {
+  font-size: 9px;
+  color: gray;
+}
+
+/* PRICE ROW */
+.bb-price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.bb-price {
+  background-color: #28a745;   /* Green */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.bb-mrp {
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* OFFER */
+.bb-offer {
+  font-size: 13px;
+  color: #d32f2f;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* TITLE */
+.bb-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.bb-pack {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+/* ⭐ STAR RATING */
+.star-rating span {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* GREEN ADD TO CART BUTTON */
+.cart-btn {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cart-btn:hover {
+  background: #0a8a0a;
+}
+.popup-message {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: rgb(8, 168, 8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  animation: fadeOut 2s forwards;
+}
+
+/* fade-out animation */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Add to Cart button styling */
+.cart-btn {
+  padding: 8px 12px;
+  background-color: #148a32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #005bb5;
+}
