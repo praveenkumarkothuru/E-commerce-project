@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="/">
-        <img src="" alt="Store Logo" className="store-logo" />
+        <img src="/logo.png" alt="Store Logo" className="store-logo" />
       </a>
 
       <h2 className="store-name">GODAVARI RUCHULU</h2>
