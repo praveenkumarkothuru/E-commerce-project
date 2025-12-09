@@ -1,79 +1,49 @@
 import React from "react";
-import "./style.css";
-
- // External CSS
+import "./About.css";
 
 function About() {
   return (
     <div className="about-container">
-      {/* Header */}
       <h1 className="about-title">About Us</h1>
 
       <p className="about-description">
-        Welcome to <strong>Your Company</strong>. We specialize in building
-        high-quality digital products that help businesses grow. Our focus is on
-        delivering reliable, scalable, and user-centric solutions.
+        Welcome to our e-commerce website! We are committed to delivering the best
+        shopping experience with quality products and fast service.
       </p>
 
-      {/* Mission */}
-      <section className="about-section">
+      <div className="about-section">
         <h2 className="section-heading">Our Mission</h2>
         <p className="section-text">
-          To empower businesses with cutting-edge technology and world-class software
-          solutions that create measurable impact.
+          Our mission is to offer top-quality products with a seamless shopping
+          experience for our customers.
         </p>
-      </section>
+      </div>
 
-      {/* Vision */}
-      <section className="about-section">
-        <h2 className="section-heading">Our Vision</h2>
-        <p className="section-text">
-          To be a global technology leader trusted for delivering innovative solutions
-          and outstanding user experiences.
-        </p>
-      </section>
-
-      {/* Team */}
-      <section className="about-section">
+      <div className="about-section">
         <h2 className="section-heading">Our Team</h2>
 
         <div className="team-grid">
           <div className="team-card">
-            <img
-              src="https://i.pravatar.cc/150?img=32"
-              alt="Priya Sharma"
-              className="team-avatar"
-            />
-            <h3 className="team-name">Priya Sharma</h3>
-            <p className="team-role">CEO</p>
+            <img src="https://via.placeholder.com/90" className="team-avatar" />
+            <h3 className="team-name">Praveen</h3>
+            <p className="team-role">Founder</p>
           </div>
 
           <div className="team-card">
-            <img
-              src="https://i.pravatar.cc/150?img=12"
-              alt="Rohit Kumar"
-              className="team-avatar"
-            />
-            <h3 className="team-name">Rohit Kumar</h3>
-            <p className="team-role">CTO</p>
+            <img src="https://via.placeholder.com/90" className="team-avatar" />
+            <h3 className="team-name">Kiran</h3>
+            <p className="team-role">Developer</p>
           </div>
 
           <div className="team-card">
-            <img
-              src="https://i.pravatar.cc/150?img=5"
-              alt="Anita Desai"
-              className="team-avatar"
-            />
-            <h3 className="team-name">Anita Desai</h3>
-            <p className="team-role">Product Lead</p>
+            <img src="https://via.placeholder.com/90" className="team-avatar" />
+            <h3 className="team-name">Suman</h3>
+            <p className="team-role">Designer</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Footer */}
-      <footer className="footer-text">
-        © {new Date().getFullYear()} Your Company — All Rights Reserved.
-      </footer>
+      <p className="footer-text">© 2025 Your Website. All Rights Reserved.</p>
     </div>
   );
 }

@@ -1,0 +1,94 @@
+/* ---------------- ABOUT US PAGE ---------------- */
+/* About Page Styles */
+/* Container */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.about-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Intro Text */
+.about-description {
+  font-size: 17px;
+  color: #444;
+  text-align: center;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* Section */
+.about-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Area */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.team-card {
+  flex: 1 1 250px;
+  max-width: 260px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.team-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
