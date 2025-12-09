@@ -1,5 +1,7 @@
 import React from "react";
-import "./style.css"; // External CSS
+import "./style.css";
+
+ // External CSS
 
 function About() {
   return (

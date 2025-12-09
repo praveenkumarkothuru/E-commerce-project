@@ -1,6 +1,6 @@
 /* NAVBAR */
 .navbar {
-  width: 98%;
+  width: 97%;
   height: 70px;
   background: #181919;
   color: white;
@@ -25,8 +25,8 @@
 /* BRAND NAME */
 .store-name {
   font-family: 'Merienda', cursive;
-  font-size: 28px;
-  color: #c79d36;
+  font-size: 20px;
+  color: #5b13c7;
   margin-left: 10px;
 }
 
@@ -47,13 +47,13 @@
 
 .nav-links a {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #c79d36;
+  color: #1b85d7;
 }
 
 /* LOGIN BUTTON */
