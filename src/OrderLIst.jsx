@@ -1,4 +1,5 @@
 import React from "react";
+import "./OrderSuccess.css";
 
 function OrdersList() {
   const orders = JSON.parse(localStorage.getItem("orders")) || [];

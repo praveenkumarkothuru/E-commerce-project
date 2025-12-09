@@ -34,7 +34,11 @@ function ProductCard({ product }) {
       </div>
 
       {/* Product Image */}
-      <img src={product.img} alt={product.name} className="bb-img" />
+     <img
+  src={product.img && product.img.trim() !== "" ? product.img : null}
+  alt={product.name || "Product"}
+  className="product-img"
+/>
 
       {/* Price */}
       <div className="bb-price-row">

@@ -29,24 +29,7 @@ function Home() {
       <div className="home-container">
         <h1 className="home-title">Welcome to Our Store</h1>
 
-        <div className="search-row">
-          <input type="text" placeholder="Search..." className="search-input" />
-          <button className="search-btn">Search</button>
-        </div>
-      </div>
-
-      <a
-  href="/location"
-  style={{
-    padding: "10px 20px",
-    background: "#007bff",
-    color: "white",
-    borderRadius: "8px",
-    textDecoration: "none"
-  }}
->
-  Set Delivery Location
-</a>
+</div>
 
 
       {/* SCROLL DOWN → 3 CARDS SECTION */}

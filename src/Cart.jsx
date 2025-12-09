@@ -173,23 +173,9 @@ function Cart() {
             </div>
 
             {/* ⭐ LOCATION BUTTON WORKING ⭐ */}
-            <button
-              onClick={handleLocation}
-              style={{
-                padding: "10px",
-                background: "blue",
-                color: "white",
-                borderRadius: "8px",
-                border: "none",
-                marginTop: "10px",
-              }}
-            >
-              Get Current Location
-            </button>
+           
 
-            <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-              Location: {location || "Not set"}
-            </p>
+            
 
             {/* Proceed to Payment */}
             <button

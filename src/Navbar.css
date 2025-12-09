@@ -1,52 +1,81 @@
+/* NAVBAR */
 .navbar {
   width: 98%;
-  height: 80px;
-  background: #0f110f;
+  height: 70px;
+  background: #181919;
   color: white;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 40px;
   position: fixed;
   top: 0;
   left: 0;
-
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   z-index: 9999;
 }
 
-/* LINKS */
+/* LOGO */
+.store-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* BRAND NAME */
+.store-name {
+  font-family: 'Merienda', cursive;
+  font-size: 28px;
+  color: #c79d36;
+  margin-left: 10px;
+}
+
+/* LEFT SECTION (LOGO + NAME) */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* NAV LINKS */
 .nav-links {
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .nav-links a {
   color: white;
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  opacity: 0.7;
+  color: #c79d36;
 }
 
 /* LOGIN BUTTON */
 .logout-btn {
-  background: red;
+  background: #1010d3;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.logout-btn:hover {
+  background: #2b06a2;
 }
 
-/* HAMBURGER – 3 Lines */
+/* HAMBURGER MENU BUTTON */
 .hamburger {
   width: 35px;
   height: 26px;
-  display: flex;
+  display: none; /* hidden on desktop */
   flex-direction: column;
   justify-content: space-between;
   background: none;
@@ -57,6 +86,37 @@
 .hamburger span {
   width: 100%;
   height: 4px;
-  background: white;   /* FIXED — visible now */
+  background: white;
   border-radius: 4px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #181919;
+    width: 220px;
+    flex-direction: column;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+  }
+
+  .nav-links.open {
+    display: flex; /* show on click */
+  }
+
+  .hamburger {
+    display: flex; /* show hamburger on mobile */
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
 }

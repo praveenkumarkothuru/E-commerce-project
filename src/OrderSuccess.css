@@ -1,0 +1,127 @@
+/* Orders.css */
+
+.orders-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.orders-container h1 {
+  text-align: center;/* Orders.css – Updated Stylish Version */
+}
+/* MAIN CONTAINER */
+.orders-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.orders-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ORDER CARD */
+.order-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ORDER INFO TEXT */
+.order-info p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* STATUS BADGES */
+.order-status {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* STATUS COLORS */
+.status-pending {
+  background-color: #f0ad4e; /* Orange */
+}
+
+.status-completed {
+  background-color: #5cb85c; /* Green */
+}
+
+.status
+-cancelled {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.order-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+}
+
+.status-pending {
+  background-color: #f0ad4e;
+}
+
+.status-completed {
+  background-color: #5cb85c;
+}
+
+.status-cancelled {
+  background-color: #d9534f;
+}
